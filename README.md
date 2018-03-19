@@ -5,34 +5,43 @@ The goal is to determine mass and lifetime of an unknown particle. Data consists
 To run the analysis, cern root is required with ROOFit installed.
 
 //Loading the macros
+
 root -l
-.L analysis.C
+```.L analysis.C```
 
 //plots and saves a histogram of the data
-plotDataSet()
+
+```plotDataSet()```
 
 //performs a lifetime fit on signal data only
-signalLifetimeFit()
+
+```signalLifetimeFit()```
 
 //performs a mass fit on signal data only
-signalMassFit()
+
+```signalMassFit()```
 
 //performs a lifetime fit using lifetime data with signal + background
-lifetimeFit()
+
+```lifetimeFit()```
 
 //performs a mass fit using mass data with signal + background
 //graphs a negative log likelihood dependance on fitting parameter (mass)
-massFit()
+
+```massFit()```
 
 //performs a lifetime fit using lifetime data with signal + background
 //graphs a negative log likelihood dependance on fitting parameter (lifetime)
-lifetimeFit()
+
+```lifetimeFit()```
 
 //performs a combined fit of mass and lifetime using product of PDFs; this kind of fit is more "powerful" as it uses both lifetime and mass during fitting (not discarding one or the other as in previous fits)
 //signalPDF=massGaussian*lifetimeConvolution; backgroundPDF=quadraticPolynome*(lifetimeConv1+fraction*lifetimeConv2)
 //totalPDF = signalFraction*signalPDF + (1-signalFraction)*backgroundPDF
 //also plots a confidence region as a contour plot
-combinedFit()
+
+```combinedFit()```
 
 //plots profile likelihood of fitted mass and lifetime () which follows a chi-squared(/2) distribution
-profiles()
+
+```profiles()```
