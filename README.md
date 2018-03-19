@@ -6,8 +6,8 @@ To run the analysis, cern root is required with ROOFit installed.
 
 //Loading the macros
 
-```root -l
-.L analysis.C```
+```root -l```
+```.L analysis.C```
 
 //plots and saves a histogram of the data
 
