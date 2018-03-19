@@ -1,5 +1,4 @@
-# Lifetime
-Statistics course exercise
+# Lifetime - Statistics course exercise
 The goal is to determine mass and lifetime of an unknown particle. Data consists of lifetime and mass measurements of particle candidates. masslife_signal.data only consists of signal events, while others have background as well. Background consists of a particle with no lifetime (immediate decay) and a particle with long (relatively) lifetime. Lifetime measurements are smeared with a Gaussian resolution (each particle type can have different resolution), this is reflected in lifetime PDF being an exponential decay convoluted with a gaussian.
 
 To run the analysis, cern root is required with ROOFit installed.
@@ -7,6 +6,7 @@ To run the analysis, cern root is required with ROOFit installed.
 //Loading the macros
 
 ```root -l```
+
 ```.L analysis.C```
 
 //plots and saves a histogram of the data
