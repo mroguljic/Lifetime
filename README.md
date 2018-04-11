@@ -42,6 +42,6 @@ To run the analysis, cern root is required with ROOFit installed.
 
 ```combinedFit()```
 
-//plots profile likelihood of fitted mass and lifetime () which follows a chi-squared(/2) distribution
+//plots profile likelihood of fitted mass and lifetime ()
 
 ```profiles()```
